@@ -18,9 +18,10 @@ The commands are delemited by <tab>. Hitting <tab> goes to the next $VALn$ where
 ## Jasmine Commands
 ### aft 
 After each
-`afterEach(function () {  
+```javascript 
+afterEach(function () {  
 	$END$  
-});`
+});```
 
 ### any 
 any
