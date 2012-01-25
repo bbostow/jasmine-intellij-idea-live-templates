@@ -18,8 +18,8 @@ The commands are delemited by <tab>. Hitting <tab> goes to the next $VALn$ where
 ## Jasmine Commands
 ### aft 
 After each
-`afterEach(function () {
-	$END$
+`afterEach(function () {  
+	$END$  
 });`
 
 ### any 
@@ -28,14 +28,14 @@ any
 
 ### bef 
 before each
-`beforeEach(function () {
-    $END$    
+`beforeEach(function () {  
+    $END$      
 });`
 
 ### des 
 describe jasmine
-`describe("$VAL0$", function () {
-    $END$
+`describe("$VAL0$", function () {  
+    $END$  
 });`
 
 ### ec
@@ -76,8 +76,8 @@ expect
 
 ### it
 it
-`it("$VAL0$", function () {
-    $END$
+`it("$VAL0$", function () {  
+    $END$  
 });`
 
 ### notc
@@ -122,8 +122,8 @@ expect not
 
 ### runs
 runs
-`runs(function () {
-    $END$
+`runs(function () {  
+    $END$  
 });`
 
 ### s
