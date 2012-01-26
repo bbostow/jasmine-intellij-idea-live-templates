@@ -201,7 +201,8 @@ expect($VAL0$).not.toBeTruthy();$END$
 expect not
 
 ``` javascript
-expect($VAL0$).not$END$;```
+expect($VAL0$).not$END$;
+```
 
 ### runs
 runs
@@ -209,13 +210,15 @@ runs
 ``` javascript
 runs(function () {  
     $END$  
-});```
+});
+```
 
 ### s
 spy on
 
 ``` javascript
-spyOn($VAL0$, "$VAL1$")$END$;```
+spyOn($VAL0$, "$VAL1$")$END$;
+```
 
 ### scf
 spy on and call fake
