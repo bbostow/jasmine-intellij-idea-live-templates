@@ -18,161 +18,276 @@ The commands are delemited by <tab>. Hitting <tab> goes to the next $VALn$ where
 ## Jasmine Commands
 ### aft 
 After each
-``` 
+
+
+``` javascript
 afterEach(function () {  
 	$END$  
 });
-```
+
+`````
 
 ### any 
 any
-`jasmine.jasmine.any($VAL0$);$END$`
+
+
+``` javascript
+jasmine.jasmine.any($VAL0$);$END$
+```
 
 ### bef 
 before each
-`beforeEach(function () {  
+
+
+``` javascript
+beforeEach(function () {  
     $END$      
-});`
+});
+```
 
 ### des 
 describe jasmine
-`describe("$VAL0$", function () {  
+
+
+``` javascript
+describe("$VAL0$", function () {  
     $END$  
-});`
+});
+```
 
 ### ec
 expect to contain
-`expect($VAL0$).toContain($VAL1$);$END$`
+
+
+``` javascript
+expect($VAL0$).toContain($VAL1$);$END$
+```
 
 ### ed
 expect to be defined
-`expect($VAL0$).toBeDefined();$END$`
+
+
+``` javascript
+expect($VAL0$).toBeDefined();$END$
+```
 
 ### ee
 expect to equal
-`expect($VAL0$).toEqual($VAL1$);$END$`
+
+
+``` javascript
+expect($VAL0$).toEqual($VAL1$);$END$
+```
 
 ### ef
 expect to match
-`expect($VAL0$).toBeFalsy();$END$`
+
+
+``` javascript
+expect($VAL0$).toBeFalsy();$END$
+```
 
 ### en
 expect to be null
-`expect($VAL0$).toBeNull();$END$`
+
+
+``` javascript
+expect($VAL0$).toBeNull();$END$
+```
 
 ### esc
 expect was called
-`expect($VAL0$).wasCalled();$END$`
+
+
+``` javascript
+expect($VAL0$).wasCalled();$END$
+```
 
 ### escw
 expect was called with
-`expect($VAL0$).wasCalledWith($VAL1$);$END$`
+
+
+``` javascript
+expect($VAL0$).wasCalledWith($VAL1$);$END$
+```
 
 ### et
 expect to be truthy
-`expect($VAL0$).toBeTruthy();$END$`
+
+``` javascript
+expect($VAL0$).toBeTruthy();$END$
+```
 
 ### ex
 expect
-`expect($VAL0$)$END$;`
+
+``` javascript
+expect($VAL0$)$END$;
+```
 
 ### it
 it
-`it("$VAL0$", function () {  
+
+``` javascript
+it("$VAL0$", function () {  
     $END$  
-});`
+});
+```
 
 ### notc
 expect not to contain
-`expect($VAL0$).not.toContain($VAL1$);$END$`
+
+``` javascript
+expect($VAL0$).not.toContain($VAL1$);$END$
+```
 
 ### notd
 expect not to be defined
-`expect($VAL0$).not.toBeDefined();$END$`
+
+``` javascript
+expect($VAL0$).not.toBeDefined();$END$
+```
 
 ### note
 expect not to equal
-`expect($VAL0$).not.toEqual($VAL1$);$END$`
+
+``` javascript
+expect($VAL0$).not.toEqual($VAL1$);$END$
+```
 
 ### notf
 expect not to be falsy
-`expect($VAL0$).not.toBeFalsy();$END$`
+
+``` javascript
+expect($VAL0$).not.toBeFalsy();$END$
+```
 
 ### notm
 expect not to match
-`expect($VAL0$).not.toMatch($VAL1$);$END$`
+
+``` javascript
+expect($VAL0$).not.toMatch($VAL1$);$END$
+```
 
 ### notn
 expect not to be null
-`expect($VAL0$).not.toBeNull();$END$`
+
+``` javascript
+expect($VAL0$).not.toBeNull();$END$
+```
 
 ### notsc
 expect was not called
-`expect($VAL0$).wasNotCalled();$END$`
+
+``` javascript
+expect($VAL0$).wasNotCalled();$END$
+```
 
 ### notscw
 expect was not called with
-`expect($VAL0$).wasNotCalledWith($VAL1$);$END$`
+
+``` javascript
+expect($VAL0$).wasNotCalledWith($VAL1$);$END$
+```
 
 ### nott
 expect not to be truthy
-`expect($VAL0$).not.toBeTruthy();$END$`
+
+``` javascript
+expect($VAL0$).not.toBeTruthy();$END$
+```
 
 ### notx
 expect not
-`expect($VAL0$).not$END$;`
+
+``` javascript
+expect($VAL0$).not$END$;```
 
 ### runs
 runs
-`runs(function () {  
+
+``` javascript
+runs(function () {  
     $END$  
-});`
+});```
 
 ### s
 spy on
-`spyOn($VAL0$, "$VAL1$")$END$;`
+
+``` javascript
+spyOn($VAL0$, "$VAL1$")$END$;```
 
 ### scf
 spy on and call fake
-`spyOn($VAL0$, "$VAL1$").andCallFake($VAL2$);$END$`
+
+``` javascript
+spyOn($VAL0$, "$VAL1$").andCallFake($VAL2$);$END$
+```
 
 ### sct
 spy on and call through
-`spyOn($VAL0$, "$VAL1$").andCallThrough();$END$`
+
+``` javascript
+spyOn($VAL0$, "$VAL1$").andCallThrough();$END$
+```
 
 ### sr
 spy on and return
-`spyOn($VAL0$, "$VAL1$").andReturn($VAL2$);$END$`
+
+``` javascript
+spyOn($VAL0$, "$VAL1$").andReturn($VAL2$);$END$
+```
 
 ### st
 spy on and throw
-`spyOn($VAL0$, "$VAL1$").andThrow($VAL2$);$END$`
+
+``` javascript
+spyOn($VAL0$, "$VAL1$").andThrow($VAL2$);$END$
+```
 
 ### wa
 waits
-`waits($VAL0$);$END$`
+
+``` javascript
+waits($VAL0$);$END$
+```
 
 ## Jasmine-Jquery
 
 ### eb
 expect to be
-`expect($VAL0$).toBe($VAL1$);$END$`
+
+``` javascript
+expect($VAL0$).toBe($VAL1$);$END$
+```
 
 ### ebc
 expect to be checked
-`expect($VAL0$).toBeChecked();$END$`
+
+``` javascript
+expect($VAL0$).toBeChecked();$END$
+```
 
 ### lf
 load fixutre
-`loadFixtures($VAL0$);$END$`
+
+``` javascript
+loadFixtures($VAL0$);$END$
+```
 
 ### rf
 read fixture
-`readFixture($VAL0$);$END$`
+
+``` javascript
+readFixture($VAL0$);$END$
+```
 
 ### sf
 set fixture
-`setFixture($VAL0$);$END$`
+
+``` javascript
+setFixture($VAL0$);$END$
+```
 
 
 
