@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Jasmine-intellij-idea-live-templates : Live Templates for working with Jasmine BDD. Closely goes with functionality in the TextMate bundle provided by pivotal" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jasmine-intellij-idea-live-templates</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/bbostow/jasmine-intellij-idea-live-templates">View on GitHub</a>
+
+          <h1 id="project_title">Jasmine-intellij-idea-live-templates</h1>
+          <h2 id="project_tagline">Live Templates for working with Jasmine BDD. Closely goes with functionality in the TextMate bundle provided by pivotal</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/bbostow/jasmine-intellij-idea-live-templates/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/bbostow/jasmine-intellij-idea-live-templates/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Jasmine is a behavior-driven development framework for testing your JavaScript code [Jasmine].</p>
+
+<p>This is an IntelliJ IDEA Live Template for the Jasmine JavaScript BDD Framework and Jasmine JQuery extention.</p>
+
+<h1>About</h1>
+
+<p>This is are IntelliJ IDEA Live Templates for working with the Jasmine Framework. It contains two files. These files work with any JavaScript file as specified in the File Types.</p>
+
+<h2>Jasmine.xml</h2>
+
+<p>This is the main template for the Jasmine Framework</p>
+
+<h2>Jasmine_jquery.xml</h2>
+
+<p>This is the additional template for working with the Jasmine jquery extention. </p>
+
+<h1>Commands</h1>
+
+<p>The commands are delemited by . Hitting  goes to the next $VALn$ where n is the number of tab presses until $END$ is reached. For instance typing in typing in ec will put you at $VAL0$ in <code>expect($VAL0$).toContain($VAL1$);$END$</code>. Hitting  again will take you to $VAL1$ hitting  one last time will take you to the $END$ from here tab becomes a tab character. </p>
+
+<h2>Jasmine Commands</h2>
+
+<h3>aft</h3>
+
+<p>After each</p>
+
+<div class="highlight">
+<pre><span class="nx">afterEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>  
+    <span class="nx">$END$</span>  
+<span class="p">});</span>
+
+</pre>
+</div>
+
+
+<h3>any</h3>
+
+<p>any</p>
+
+<div class="highlight">
+<pre><span class="nx">jasmine</span><span class="p">.</span><span class="nx">jasmine</span><span class="p">.</span><span class="nx">any</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>bef</h3>
+
+<p>before each</p>
+
+<div class="highlight">
+<pre><span class="nx">beforeEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>  
+    <span class="nx">$END$</span>      
+<span class="p">});</span>
+</pre>
+</div>
+
+
+<h3>des</h3>
+
+<p>describe jasmine</p>
+
+<div class="highlight">
+<pre><span class="nx">describe</span><span class="p">(</span><span class="s2">"$VAL0$"</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>  
+    <span class="nx">$END$</span>  
+<span class="p">});</span>
+</pre>
+</div>
+
+
+<h3>ec</h3>
+
+<p>expect to contain</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">toContain</span><span class="p">(</span><span class="nx">$VAL1$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>ed</h3>
+
+<p>expect to be defined</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">toBeDefined</span><span class="p">();</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>ee</h3>
+
+<p>expect to equal</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="nx">$VAL1$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>ef</h3>
+
+<p>expect to match</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">toBeFalsy</span><span class="p">();</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>en</h3>
+
+<p>expect to be null</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">toBeNull</span><span class="p">();</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>esc</h3>
+
+<p>expect was called</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">wasCalled</span><span class="p">();</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>escw</h3>
+
+<p>expect was called with</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">wasCalledWith</span><span class="p">(</span><span class="nx">$VAL1$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>et</h3>
+
+<p>expect to be truthy</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">toBeTruthy</span><span class="p">();</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>ex</h3>
+
+<p>expect</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">)</span><span class="nx">$END$</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<h3>it</h3>
+
+<p>it</p>
+
+<div class="highlight">
+<pre><span class="nx">it</span><span class="p">(</span><span class="s2">"$VAL0$"</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>  
+    <span class="nx">$END$</span>  
+<span class="p">});</span>
+</pre>
+</div>
+
+
+<h3>notc</h3>
+
+<p>expect not to contain</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">not</span><span class="p">.</span><span class="nx">toContain</span><span class="p">(</span><span class="nx">$VAL1$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>notd</h3>
+
+<p>expect not to be defined</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">not</span><span class="p">.</span><span class="nx">toBeDefined</span><span class="p">();</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>note</h3>
+
+<p>expect not to equal</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">not</span><span class="p">.</span><span class="nx">toEqual</span><span class="p">(</span><span class="nx">$VAL1$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>notf</h3>
+
+<p>expect not to be falsy</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">not</span><span class="p">.</span><span class="nx">toBeFalsy</span><span class="p">();</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>notm</h3>
+
+<p>expect not to match</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">not</span><span class="p">.</span><span class="nx">toMatch</span><span class="p">(</span><span class="nx">$VAL1$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>notn</h3>
+
+<p>expect not to be null</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">not</span><span class="p">.</span><span class="nx">toBeNull</span><span class="p">();</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>notsc</h3>
+
+<p>expect was not called</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">wasNotCalled</span><span class="p">();</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>notscw</h3>
+
+<p>expect was not called with</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">wasNotCalledWith</span><span class="p">(</span><span class="nx">$VAL1$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>nott</h3>
+
+<p>expect not to be truthy</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">not</span><span class="p">.</span><span class="nx">toBeTruthy</span><span class="p">();</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>notx</h3>
+
+<p>expect not</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">not$END$</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<h3>runs</h3>
+
+<p>runs</p>
+
+<div class="highlight">
+<pre><span class="nx">runs</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>  
+    <span class="nx">$END$</span>  
+<span class="p">});</span>
+</pre>
+</div>
+
+
+<h3>s</h3>
+
+<p>spy on</p>
+
+<div class="highlight">
+<pre><span class="nx">spyOn</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">,</span> <span class="s2">"$VAL1$"</span><span class="p">)</span><span class="nx">$END$</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<h3>scf</h3>
+
+<p>spy on and call fake</p>
+
+<div class="highlight">
+<pre><span class="nx">spyOn</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">,</span> <span class="s2">"$VAL1$"</span><span class="p">).</span><span class="nx">andCallFake</span><span class="p">(</span><span class="nx">$VAL2$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>sct</h3>
+
+<p>spy on and call through</p>
+
+<div class="highlight">
+<pre><span class="nx">spyOn</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">,</span> <span class="s2">"$VAL1$"</span><span class="p">).</span><span class="nx">andCallThrough</span><span class="p">();</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>sr</h3>
+
+<p>spy on and return</p>
+
+<div class="highlight">
+<pre><span class="nx">spyOn</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">,</span> <span class="s2">"$VAL1$"</span><span class="p">).</span><span class="nx">andReturn</span><span class="p">(</span><span class="nx">$VAL2$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>st</h3>
+
+<p>spy on and throw</p>
+
+<div class="highlight">
+<pre><span class="nx">spyOn</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">,</span> <span class="s2">"$VAL1$"</span><span class="p">).</span><span class="nx">andThrow</span><span class="p">(</span><span class="nx">$VAL2$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>wa</h3>
+
+<p>waits</p>
+
+<div class="highlight">
+<pre><span class="nx">waits</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h2>Jasmine-Jquery</h2>
+
+<h3>eb</h3>
+
+<p>expect to be</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">toBe</span><span class="p">(</span><span class="nx">$VAL1$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>ebc</h3>
+
+<p>expect to be checked</p>
+
+<div class="highlight">
+<pre><span class="nx">expect</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">).</span><span class="nx">toBeChecked</span><span class="p">();</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>lf</h3>
+
+<p>load fixutre</p>
+
+<div class="highlight">
+<pre><span class="nx">loadFixtures</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>rf</h3>
+
+<p>read fixture</p>
+
+<div class="highlight">
+<pre><span class="nx">readFixture</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h3>sf</h3>
+
+<p>set fixture</p>
+
+<div class="highlight">
+<pre><span class="nx">setFixture</span><span class="p">(</span><span class="nx">$VAL0$</span><span class="p">);</span><span class="nx">$END$</span>
+</pre>
+</div>
+
+
+<h1>More</h1>
+
+<ul>
+<li>[1]<a href="http://github.com/pivotal/jasmine">Jasmine</a>
+</li>
+<li>[2]<a href="https://github.com/pivotal/jasmine-tmbundle">Jasmine Text Mate bundle</a>
+</li>
+<li>[3]<a href="https://github.com/velesin/jasmine-jquery">Jasmine JQuery</a>
+</li>
+</ul><h1>Live Template Installation</h1>
+
+<h2>Mac OS X</h2>
+
+<p>Copy the xml file to "~/Library/Preferences/IntelliJIdea11/templates/"</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jasmine-intellij-idea-live-templates maintained by <a href="https://github.com/bbostow">bbostow</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-31893326-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
