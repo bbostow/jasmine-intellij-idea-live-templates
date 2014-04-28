@@ -302,6 +302,9 @@ setFixture($VAL0$);$END$
 
 
 # Live Template Installation
-## Mac OS X
-Copy the xml file to "~/Library/Preferences/IntelliJIdea11/templates/"
 
+Copy the xml file(s) to the live templates directory:
+
+ * Windows: `<your home directory>\.<product name><version number>\config\templates`
+ * Linux: `~\.<product name><version number>\config\templates`
+ * MacOS: `~/Library/Preferences/<product name><version number>/templates`
